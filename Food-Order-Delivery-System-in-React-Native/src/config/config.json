@@ -1,0 +1,69 @@
+{
+  "api": {
+    "baseUrl": "http://localhost:5000/api",
+    "timeout": 30000
+  },
+  "payment": {
+    "payme": {
+      "merchantId": "YOUR_PAYME_MERCHANT_ID",
+      "testMode": true
+    },
+    "click": {
+      "merchantId": "YOUR_CLICK_MERCHANT_ID",
+      "serviceId": "YOUR_CLICK_SERVICE_ID",
+      "testMode": true
+    },
+    "uzcard": {
+      "merchantId": "YOUR_UZCARD_MERCHANT_ID",
+      "testMode": true
+    },
+    "humo": {
+      "merchantId": "YOUR_HUMO_MERCHANT_ID",
+      "testMode": true
+    }
+  },
+  "map": {
+    "defaultRegion": {
+      "latitude": 40.2969,
+      "longitude": 71.9786,
+      "latitudeDelta": 0.02,
+      "longitudeDelta": 0.02
+    },
+    "deliveryZones": [
+      {
+        "name": "Центр города",
+        "coordinates": [
+          { "latitude": 40.2950, "longitude": 71.9770 },
+          { "latitude": 40.2980, "longitude": 71.9800 }
+        ]
+      },
+      {
+        "name": "Северный район",
+        "coordinates": [
+          { "latitude": 40.2990, "longitude": 71.9760 },
+          { "latitude": 40.3010, "longitude": 71.9790 }
+        ]
+      }
+    ]
+  },
+  "app": {
+    "currency": "UZS",
+    "language": "uz",
+    "defaultCity": "Quvasoy",
+    "delivery": {
+      "minOrder": 30000,
+      "maxDistance": 5,
+      "deliveryFee": 5000,
+      "freeDeliveryThreshold": 100000,
+      "workingHours": {
+        "start": "09:00",
+        "end": "23:00"
+      }
+    },
+    "restaurants": {
+      "maxRating": 5,
+      "minRating": 1,
+      "defaultSort": "rating"
+    }
+  }
+} 
